@@ -1,229 +1,251 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <!-- Métadonnées -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Revêtex - Solutions de Revêtement Durable</title>
     <meta name="description" content="Revêtex - Solutions durables en revêtement et entretien pour des structures robustes et fiables.">
-    <meta name="keywords" content="Revêtex, revêtement, anticorrosif, maçonnerie, béton, échafaudages, nettoyage, démolition">
+    <meta name="keywords" content="Revêtex, revêtement, anticorrosif, maçonnerie, béton, échafaudages, nettoyage, démolition, isolation thermique, entretien industriel">
     <link rel="icon" href="images/Revetex-logo.jpg" type="image/jpeg">
-    <!-- Liens vers les polices et les styles CSS -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+    <!-- Lien vers le fichier CSS -->
     <link rel="stylesheet" href="styles.css">
-    <!-- Script JavaScript -->
+    <!-- Référence au fichier JavaScript -->
     <script src="script.js" defer></script>
 </head>
 <body>
-    <!-- Sélecteur de langue -->
     <div class="language-switcher">
         <button onclick="switchLanguage('fr')" aria-label="Changer la langue en Français">Français</button>
         <button onclick="switchLanguage('en')" aria-label="Switch language to English">English</button>
     </div>
 
-    <!-- En-tête avec logo et navigation -->
     <header class="header">
-        <!-- Logo en haut de la page -->
-        <div class="logo-container">
-            <a href="index.html">
-                <img src="images/Revetex-logo.jpg" alt="Logo de Revêtex" class="logo">
-            </a>
-        </div>
-
-        <!-- Navigation sous le logo -->
-        <nav class="navbar">
-            <ul class="nav-links">
-                <li><a href="#about" id="link-about">À Propos</a></li>
-                <li><a href="#services" id="link-services">Services</a></li>
-                <li><a href="#projects" id="link-projects">Projets</a></li>
-                <li><a href="#testimonials" id="link-testimonials">Témoignages</a></li>
-                <li><a href="#values" id="link-values">Valeurs</a></li>
-                <li><a href="#contact" id="link-contact">Contact</a></li>
-            </ul>
-            <button class="burger-menu" aria-label="Ouvrir le menu">&#9776;</button>
-        </nav>
-
-        <!-- Contenu de l'en-tête -->
-        <div class="header-content">
-            <h1 id="header-title">Revêtex - Solutions de Revêtement Durable</h1>
-            <p id="header-subtitle">Des solutions fiables pour un revêtement durable et performant.</p>
-            <a href="#contact" class="cta-button" id="cta-contact">Contactez-nous</a>
+        <div class="container">
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="images/Revetex-logo.jpg" alt="Logo de Revêtex" class="logo">
+                </a>
+            </div>
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><button class="nav-button" data-section="about"><span class="fr">À Propos</span><span class="en">About Us</span></button></li>
+                    <li><button class="nav-button" data-section="services"><span class="fr">Services</span><span class="en">Services</span></button></li>
+                    <li><button class="nav-button" data-section="values"><span class="fr">Valeurs</span><span class="en">Values</span></button></li>
+                    <li><button class="nav-button" data-section="contact"><span class="fr">Contact</span><span class="en">Contact</span></button></li>
+                </ul>
+                <button class="burger-menu" aria-label="Ouvrir le menu">&#9776;</button>
+            </nav>
+            <div class="header-content">
+                <h1 class="fr">Revêtex - Solutions de Revêtement Durable</h1>
+                <h1 class="en">Revêtex - Durable Coating Solutions</h1>
+                <p class="fr">Des solutions fiables pour un revêtement durable et performant.</p>
+                <p class="en">Reliable solutions for durable and high-performance coatings.</p>
+                <a href="#contact" class="cta-button fr">Contactez-nous</a>
+                <a href="#contact" class="cta-button en">Contact Us</a>
+            </div>
         </div>
     </header>
 
-    <!-- Section À Propos -->
-    <section id="about" class="about">
+    <!-- Sections du site -->
+    <section id="about" class="content-section about">
         <div class="container">
-            <h2 id="about-title">Pourquoi Choisir Revêtex ?</h2>
-            <p id="about-description1">Revêtex est une entreprise spécialisée dans les solutions de revêtement et d’entretien, offrant une expertise dans la protection et la préservation des structures pour le secteur industriel, commercial et résidentiel.</p>
-            <p id="about-description2">Nous utilisons des matériaux de qualité supérieure et des techniques de pointe pour répondre aux besoins uniques de chaque projet. Notre équipe s’engage à fournir des services personnalisés et des résultats fiables, garantissant ainsi la satisfaction de nos clients.</p>
-            <p id="about-description3">Avec plus de 20 ans d'expérience, nous sommes fiers de notre réputation de fiabilité et de professionnalisme. Nos solutions sont conçues pour résister aux conditions les plus exigeantes, assurant la longévité de vos infrastructures.</p>
+            <h2 class="fr">Pourquoi Choisir Revêtex ?</h2>
+            <h2 class="en">Why Choose Revêtex?</h2>
+            <p class="fr">Revêtex est une entreprise spécialisée dans les solutions de revêtement et d’entretien, offrant une expertise dans la protection et la préservation des structures pour le secteur industriel, commercial et résidentiel.</p>
+            <p class="en">Revêtex is a company specializing in coating and maintenance solutions, offering expertise in the protection and preservation of structures for the industrial, commercial, and residential sectors.</p>
+            <p class="fr">Nous utilisons des matériaux de qualité supérieure et des techniques de pointe pour répondre aux besoins uniques de chaque projet. Notre équipe s’engage à fournir des services personnalisés et des résultats fiables, garantissant ainsi la satisfaction de nos clients.</p>
+            <p class="en">We use high-quality materials and cutting-edge techniques to meet the unique needs of each project. Our team is committed to providing personalized services and reliable results, ensuring customer satisfaction.</p>
+            <p class="fr">Nous sommes fiers de notre réputation de fiabilité et de professionnalisme. Nos solutions sont conçues pour résister aux conditions les plus exigeantes, assurant la longévité de vos infrastructures.</p>
+            <p class="en">We are proud of our reputation for reliability and professionalism. Our solutions are designed to withstand the most demanding conditions, ensuring the longevity of your infrastructures.</p>
         </div>
     </section>
 
-    <!-- Section Services -->
-    <section id="services" class="services">
+    <section id="services" class="content-section services">
         <div class="container">
-            <h2 id="services-title">Nos Services</h2>
+            <h2 class="fr">Nos Services</h2>
+            <h2 class="en">Our Services</h2>
             <ul class="service-list">
-                <li id="service1">
-                    <strong>Maçonnerie & Béton :</strong>
-                    <p>Construction et restauration de structures en béton et en maçonnerie, en utilisant des techniques modernes pour une durabilité accrue.</p>
+                <li>
+                    <strong class="fr">Maçonnerie & Béton :</strong>
+                    <strong class="en">Masonry & Concrete:</strong>
+                    <p class="fr">Construction et restauration de structures en béton et en maçonnerie, en utilisant des techniques modernes pour une durabilité accrue.</p>
+                    <p class="en">Construction and restoration of concrete and masonry structures, using modern techniques for increased durability.</p>
                     <ul>
-                        <li>Rénovation de façades</li>
-                        <li>Réparation de fissures</li>
-                        <li>Renforcement structural</li>
+                        <li class="fr">Rénovation de façades</li>
+                        <li class="en">Facade Renovation</li>
+                        <li class="fr">Réparation de fissures</li>
+                        <li class="en">Crack Repair</li>
+                        <li class="fr">Renforcement structural</li>
+                        <li class="en">Structural Reinforcement</li>
+                        <li class="fr">Étanchéité des surfaces</li>
+                        <li class="en">Surface Waterproofing</li>
                     </ul>
                 </li>
-                <li id="service2">
-                    <strong>Revêtement Anticorrosif :</strong>
-                    <p>Protection avancée contre la corrosion pour les structures métalliques. Nos produits innovants assurent une protection à long terme et minimisent les coûts de maintenance.</p>
+                <li>
+                    <strong class="fr">Revêtement Anticorrosif :</strong>
+                    <strong class="en">Anti-Corrosive Coating:</strong>
+                    <p class="fr">Protection avancée contre la corrosion pour les structures métalliques. Nos produits innovants assurent une protection à long terme et minimisent les coûts de maintenance.</p>
+                    <p class="en">Advanced corrosion protection for metal structures. Our innovative products provide long-term protection and minimize maintenance costs.</p>
                     <ul>
-                        <li>Traitement antirouille</li>
-                        <li>Application de peintures spéciales</li>
-                        <li>Revêtements époxy</li>
+                        <li class="fr">Traitement antirouille</li>
+                        <li class="en">Rust Treatment</li>
+                        <li class="fr">Application de peintures spéciales</li>
+                        <li class="en">Application of Special Paints</li>
+                        <li class="fr">Revêtements époxy</li>
+                        <li class="en">Epoxy Coatings</li>
+                        <li class="fr">Protection cathodique</li>
+                        <li class="en">Cathodic Protection</li>
                     </ul>
                 </li>
-                <li id="service3">
-                    <strong>Échafaudages :</strong>
-                    <p>Installation d’échafaudages sur mesure pour garantir un accès sécurisé, même dans les environnements difficiles d'accès.</p>
+                <li>
+                    <strong class="fr">Échafaudages :</strong>
+                    <strong class="en">Scaffolding:</strong>
+                    <p class="fr">Installation d’échafaudages sur mesure pour garantir un accès sécurisé, même dans les environnements difficiles d'accès.</p>
+                    <p class="en">Custom scaffolding installations to ensure safe access, even in hard-to-reach environments.</p>
                     <ul>
-                        <li>Montage et démontage rapides</li>
-                        <li>Conformité aux normes de sécurité</li>
-                        <li>Équipements modernes</li>
+                        <li class="fr">Montage et démontage rapides</li>
+                        <li class="en">Quick Assembly and Disassembly</li>
+                        <li class="fr">Conformité aux normes de sécurité</li>
+                        <li class="en">Compliance with Safety Standards</li>
+                        <li class="fr">Équipements modernes</li>
+                        <li class="en">Modern Equipment</li>
+                        <li class="fr">Échafaudages suspendus</li>
+                        <li class="en">Suspended Scaffolding</li>
                     </ul>
                 </li>
-                <li id="service4">
-                    <strong>Nettoyages & Entretiens :</strong>
-                    <p>Services de nettoyage industriel complets pour préserver l’intégrité, la fonctionnalité et l’apparence de vos structures.</p>
+                <li>
+                    <strong class="fr">Nettoyages & Entretiens :</strong>
+                    <strong class="en">Cleaning & Maintenance:</strong>
+                    <p class="fr">Services de nettoyages complets pour préserver l’intégrité, la fonctionnalité et l’apparence de vos structures.</p>
+                    <p class="en">Comprehensive industrial cleaning services to preserve the integrity, functionality, and appearance of your structures.</p>
                     <ul>
-                        <li>Nettoyage haute pression</li>
-                        <li>Traitement des surfaces</li>
-                        <li>Entretien préventif</li>
+                        <li class="fr">Nettoyage haute pression</li>
+                        <li class="en">High-Pressure Cleaning</li>
+                        <li class="fr">Traitement des surfaces</li>
+                        <li class="en">Surface Treatment</li>
+                        <li class="fr">Entretien préventif</li>
+                        <li class="en">Preventive Maintenance</li>
+                        <li class="fr">Dégraissage industriel</li>
+                        <li class="en">Industrial Degreasing</li>
                     </ul>
                 </li>
-                <li id="service5">
-                    <strong>Démolition :</strong>
-                    <p>Démolition contrôlée à faible impact environnemental, grâce à l'utilisation de techniques et d'équipements respectueux de l'environnement.</p>
+                <li>
+                    <strong class="fr">Démolition :</strong>
+                    <strong class="en">Demolition:</strong>
+                    <p class="fr">Démolition contrôlée pour des projets de toutes tailles, en garantissant la sécurité et la gestion responsable des déchets.</p>
+                    <p class="en">Controlled demolition for projects of all sizes, ensuring safety and responsible waste management.</p>
                     <ul>
-                        <li>Démolition sélective</li>
-                        <li>Gestion des déchets</li>
-                        <li>Recyclage des matériaux</li>
+                        <li class="fr">Démolition sélective</li>
+                        <li class="en">Selective Demolition</li>
+                        <li class="fr">Gestion des déchets</li>
+                        <li class="en">Waste Management</li>
+                        <li class="fr">Recyclage des matériaux</li>
+                        <li class="en">Material Recycling</li>
+                        <li class="fr">Démolition intérieure</li>
+                        <li class="en">Interior Demolition</li>
                     </ul>
                 </li>
-                <li id="service6">
-                    <strong>Isolation Thermique :</strong>
-                    <p>Solutions d'isolation pour améliorer l'efficacité énergétique de vos bâtiments, réduisant ainsi les coûts énergétiques.</p>
+                <li>
+                    <strong class="fr">Isolation Thermique :</strong>
+                    <strong class="en">Thermal Insulation:</strong>
+                    <p class="fr">Solutions d'isolation thermique pour améliorer l'efficacité énergétique de vos structures.</p>
+                    <p class="en">Thermal insulation solutions to improve the energy efficiency of your structures.</p>
                     <ul>
-                        <li>Isolation par l'extérieur</li>
-                        <li>Isolation des toitures</li>
-                        <li>Matériaux écologiques</li>
+                        <li class="fr">Isolation par l'extérieur</li>
+                        <li class="en">External Insulation</li>
+                        <li class="fr">Matériaux écologiques</li>
+                        <li class="en">Eco-friendly Materials</li>
+                        <li class="fr">Études thermiques</li>
+                        <li class="en">Thermal Studies</li>
+                        <li class="fr">Réduction des coûts énergétiques</li>
+                        <li class="en">Energy Cost Reduction</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong class="fr">Entretien :</strong>
+                    <strong class="en">Maintenance:</strong>
+                    <p class="fr">Programmes d'entretien sur mesure pour assurer le bon fonctionnement de vos installations industrielles.</p>
+                    <p class="en">Custom maintenance programs to ensure the proper functioning of your industrial facilities.</p>
+                    <ul>
+                        <li class="fr">Inspection régulière</li>
+                        <li class="en">Regular Inspection</li>
+                        <li class="fr">Maintenance préventive</li>
+                        <li class="en">Preventive Maintenance</li>
+                        <li class="fr">Réparations urgentes</li>
+                        <li class="en">Emergency Repairs</li>
+                        <li class="fr">Conformité réglementaire</li>
+                        <li class="en">Regulatory Compliance</li>
                     </ul>
                 </li>
             </ul>
         </div>
     </section>
 
-    <!-- Section Projets -->
-    <section id="projects" class="projects">
+    <section id="values" class="content-section values">
         <div class="container">
-            <h2 id="projects-title">Nos Réalisations</h2>
-            <p id="projects-description">Revêtex a participé à de nombreux projets, apportant notre expertise à chaque étape. Voici quelques exemples de nos travaux réussis :</p>
-            <div class="project-gallery">
-                <div class="project-item">
-                    <img src="images/project1.jpg" alt="Projet de revêtement industriel" loading="lazy">
-                    <h3 id="project1-title">Revêtement Industriel Anticorrosif</h3>
-                    <p id="project1-description">Protection optimale contre la corrosion dans un environnement industriel exigeant, assurant une durée de vie prolongée des installations.</p>
-                </div>
-                <div class="project-item">
-                    <img src="images/project2.jpg" alt="Projet de maçonnerie en béton" loading="lazy">
-                    <h3 id="project2-title">Restauration de Structures en Béton</h3>
-                    <p id="project2-description">Rénovation et renforcement de structures en béton vieillissantes pour prolonger leur durée de vie et assurer une sécurité optimale.</p>
-                </div>
-                <div class="project-item">
-                    <img src="images/project3.jpg" alt="Projet d'échafaudage complexe" loading="lazy">
-                    <h3 id="project3-title">Installation d'Échafaudages Complexes</h3>
-                    <p id="project3-description">Mise en place d'échafaudages dans un environnement urbain dense, garantissant sécurité et efficacité pour les travailleurs.</p>
-                </div>
-                <div class="project-item">
-                    <img src="images/project4.jpg" alt="Projet de nettoyage industriel" loading="lazy">
-                    <h3 id="project4-title">Nettoyage Industriel Haute Pression</h3>
-                    <p id="project4-description">Nettoyage en profondeur des équipements industriels pour maintenir leur performance et prolonger leur durée de vie.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section Témoignages -->
-    <section id="testimonials" class="testimonials">
-        <div class="container">
-            <h2 id="testimonials-title">Ce Que Disent Nos Clients</h2>
-            <div class="testimonial-list">
-                <div class="testimonial-item">
-                    <p>"Revêtex a dépassé nos attentes en rénovant notre bâtiment industriel. Leur professionnalisme et leur expertise sont inégalés."</p>
-                    <p><strong>- Marie Dubois, Directrice Générale de CPT Industries</strong></p>
-                </div>
-                <div class="testimonial-item">
-                    <p>"Grâce à Revêtex, nous avons pu prolonger la durée de vie de notre béton de plusieurs années."</p>
-                    <p><strong>- Jean Martin, Dupuis</strong></p>
-                </div>
-                <div class="testimonial-item">
-                    <p>"Leur équipe est efficace et fiable. Je recommande leurs services."</p>
-                    <p><strong>- Sophie Leroy, Propriétaire de Résidence Leroy</strong></p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section Valeurs -->
-    <section id="values" class="values">
-        <div class="container">
-            <h2 id="values-title">Nos Valeurs</h2>
+            <h2 class="fr">Nos Valeurs</h2>
+            <h2 class="en">Our Values</h2>
             <ul class="value-list">
-                <li id="value1"><strong>Intégrité :</strong> Nous favorisons la transparence, le respect et l’honnêteté dans toutes nos relations avec nos clients et partenaires.</li>
-                <li id="value2"><strong>Innovation :</strong> Nous investissons constamment dans les nouvelles technologies pour offrir des solutions à la pointe du secteur.</li>
-                <li id="value3"><strong>Sécurité :</strong> La sécurité de nos équipes et de nos clients est notre priorité absolue.</li>
-                <li id="value4"><strong>Qualité :</strong> Nous nous engageons à fournir des services de haute qualité, en utilisant des matériaux de premier choix pour chaque projet.</li>
-                <li id="value5"><strong>Éco-responsabilité :</strong> Nous adoptons des pratiques respectueuses de l’environnement pour réduire notre impact écologique.</li>
-                <li id="value6"><strong>Engagement Communautaire :</strong> Nous participons activement au développement des communautés locales où nous opérons.</li>
+                <li><strong class="fr">Intégrité :</strong><strong class="en">Integrity:</strong> <span class="fr">Nous favorisons la transparence, le respect et l’honnêteté dans toutes nos relations avec nos clients et partenaires.</span><span class="en">We promote transparency, respect, and honesty in all our relationships with clients and partners.</span></li>
+                <li><strong class="fr">Innovation :</strong><strong class="en">Innovation:</strong> <span class="fr">Nous investissons constamment dans les nouvelles technologies pour offrir des solutions à la pointe du secteur.</span><span class="en">We continually invest in new technologies to offer cutting-edge solutions.</span></li>
+                <li><strong class="fr">Sécurité :</strong><strong class="en">Safety:</strong> <span class="fr">La sécurité de nos équipes et de nos clients est notre priorité absolue.</span><span class="en">The safety of our teams and clients is our top priority.</span></li>
+                <li><strong class="fr">Qualité :</strong><strong class="en">Quality:</strong> <span class="fr">Nous nous engageons à fournir des services de haute qualité, en utilisant des matériaux de premier choix pour chaque projet.</span><span class="en">We are committed to delivering high-quality services, using top-grade materials for every project.</span></li>
+                <li><strong class="fr">Éco-responsabilité :</strong><strong class="en">Eco-Responsibility:</strong> <span class="fr">Nous adoptons des pratiques respectueuses de l’environnement pour réduire notre impact écologique.</span><span class="en">We adopt environmentally friendly practices to reduce our ecological footprint.</span></li>
+                <li><strong class="fr">Engagement Communautaire :</strong><strong class="en">Community Engagement:</strong> <span class="fr">Nous participons activement au développement des communautés locales où nous opérons.</span><span class="en">We actively participate in the development of local communities where we operate.</span></li>
+                <li><strong class="fr">Service Client :</strong><strong class="en">Customer Service:</strong> <span class="fr">Nous plaçons la satisfaction de nos clients au cœur de nos préoccupations, en offrant un service personnalisé.</span><span class="en">We place customer satisfaction at the heart of our concerns by offering personalized service.</span></li>
             </ul>
         </div>
     </section>
 
-    <!-- Section Contact -->
-    <section id="contact" class="contact">
+    <section id="contact" class="content-section contact">
         <div class="container">
-            <h2 id="contact-title">Contactez-nous</h2>
-            <p id="contact-description">Discutez avec nos experts pour découvrir comment nous pouvons vous aider à atteindre vos objectifs avec des solutions durables et innovantes.</p>
+            <h2 class="fr">Contactez-nous</h2>
+            <h2 class="en">Contact Us</h2>
+            <p class="fr">Discutez avec nos experts pour découvrir comment nous pouvons vous aider à atteindre vos objectifs avec des solutions durables et innovantes.</p>
+            <p class="en">Talk with our experts to discover how we can help you achieve your goals with sustainable and innovative solutions.</p>
+            <!-- Formulaire de contact -->
             <form id="contact-form" action="#" method="post" onsubmit="handleFormSubmit(event)">
                 <div class="form-group">
-                    <label for="name" id="label-name">Nom</label>
+                    <label for="name" class="fr">Nom</label>
+                    <label for="name" class="en">Name</label>
                     <input type="text" id="name" name="name" required aria-label="Entrer votre nom">
                 </div>
                 <div class="form-group">
-                    <label for="email" id="label-email">Email</label>
+                    <label for="email" class="fr">Email</label>
+                    <label for="email" class="en">Email</label>
                     <input type="email" id="email" name="email" required aria-label="Entrer votre email">
                 </div>
                 <div class="form-group">
-                    <label for="phone" id="label-phone">Téléphone</label>
+                    <label for="phone" class="fr">Téléphone</label>
+                    <label for="phone" class="en">Phone</label>
                     <input type="tel" id="phone" name="phone" aria-label="Entrer votre numéro de téléphone">
                 </div>
                 <div class="form-group">
-                    <label for="message" id="label-message">Message</label>
+                    <label for="message" class="fr">Message</label>
+                    <label for="message" class="en">Message</label>
                     <textarea id="message" name="message" rows="5" required aria-label="Entrer votre message"></textarea>
                 </div>
-                <button type="submit" id="submit-button" aria-label="Envoyer le message">Envoyer</button>
+                <button type="submit" id="submit-button" aria-label="Envoyer le message" class="fr">Envoyer</button>
+                <button type="submit" id="submit-button" aria-label="Send Message" class="en">Send</button>
                 <p id="form-message"></p>
             </form>
+            <!-- Informations de contact -->
             <div class="contact-info">
-                <p><strong>Thomas Blanchet</strong><br>Ventes Techniques</p>
-                <p>Email : <a href="mailto:tblanchet@liningrevetex.com">tblanchet@liningrevetex.com</a></p>
-                <p>Téléphone : <a href="tel:+18196680473">+1 (819) 668-0473</a></p>
-                <p>Adresse : 3141 Chemin Langevin, Trois-Rivières, QC, G9B 6T5, Canada</p>
-                <p>Site web : <a href="http://www.revetexlining.com" target="_blank">www.revetexlining.com</a></p>
+                <div class="contact-person">
+                    <p><strong class="fr">[Votre Nom]</strong><strong class="en">[Your Name]</strong><br><span class="fr">[Votre Poste]</span><span class="en">[Your Position]</span></p>
+                    <p>Email : <a href="mailto:[votreemail@example.com]">[votreemail@example.com]</a></p>
+                    <p>Téléphone : <a href="tel:+[votrenumero]">[Votre Numéro]</a></p>
+                </div>
+                <div class="contact-person">
+                    <p><strong class="fr">Loic Giroux</strong><strong class="en">Loic Giroux</strong><br><span class="fr">Directeur Commercial</span><span class="en">Commercial Director</span></p>
+                    <p>Email : <a href="mailto:lgiroux@liningrevetex.com">lgiroux@liningrevetex.com</a></p>
+                    <p>Téléphone : <a href="tel:+18199442221">+1 (819) 944-2221</a></p>
+                </div>
+                <p><span class="fr">Adresse :</span><span class="en">Address:</span> 3141 Chemin Langevin, Trois-Rivières, QC, G9B 6T5, Canada</p>
+                <p><span class="fr">Site web :</span><span class="en">Website:</span> <a href="http://www.revetexlining.com" target="_blank">www.revetexlining.com</a></p>
             </div>
             <div id="contact-map">
-                <!-- Intégration de la carte Google Maps -->
+                <!-- Carte Google Maps -->
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2761.490495718699!2d-72.59960208415538!3d46.33481697911978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc7895b930bca4b%3A0x2d9b18b4d2b13c7!2s3141%20Chemin%20Langevin%2C%20Trois-Rivi%C3%A8res%2C%20QC%20G9B%206T5%2C%20Canada!5e0!3m2!1sen!2sfr!4v1615569786209!5m2!1sen!2sfr"
                     width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
@@ -231,14 +253,26 @@
         </div>
     </section>
 
-    <!-- Pied de page -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Revêtex - Tous droits réservés | <a href="#" id="privacy-policy">Politique de confidentialité</a></p>
+            <p>&copy; 2024 Revêtex - <span class="fr">Tous droits réservés</span><span class="en">All rights reserved</span> | <a href="#" id="privacy-policy"><span class="fr">Politique de confidentialité</span><span class="en">Privacy Policy</span></a></p>
         </div>
     </footer>
 
-    <!-- Bouton Retour en Haut -->
-    <button onclick="scrollToTop()" id="back-to-top" aria-label="Retour en haut">&uarr;</button>
+    <button onclick="scrollToTop()" id="back-to-top" aria-label="Retour en haut / Back to top">&uarr;</button>
+
+    <script>
+        function switchLanguage(lang) {
+            document.querySelectorAll('.fr').forEach(function(el) {
+                el.style.display = (lang === 'fr') ? '' : 'none';
+            });
+            document.querySelectorAll('.en').forEach(function(el) {
+                el.style.display = (lang === 'en') ? '' : 'none';
+            });
+        }
+        // Initialize language to French
+        switchLanguage('fr');
+    </script>
+
 </body>
 </html>

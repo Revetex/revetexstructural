@@ -1,57 +1,75 @@
-document.addEventListener('DOMContentLoaded', function() {
-    // Cacher toutes les sections au chargement de la page
+document.addEventListener('DOMContentLoaded', () => {
+    // Hide all sections on page load
     hideAllSections();
 
-    // Afficher la première section par défaut
+    // Show the first section by default
     showSection('about');
+
+    // Add event listeners to navigation buttons
+    addNavigationEventListeners();
+
+    // Add event listener to the Back to Top button
+    const backToTopButton = document.getElementById('back-to-top');
+    if (backToTopButton) {
+        backToTopButton.addEventListener('click', scrollToTop);
+    }
+
+    // Show the Back to Top button on scroll with debounce
+    window.addEventListener('scroll', debounce(handleScroll, 100));
 });
 
-// Fonction pour cacher toutes les sections
-function hideAllSections() {
-    const sections = document.querySelectorAll('.content-section');
-    sections.forEach(section => {
-        section.style.transition = 'opacity 1s ease'; 
-        section.style.opacity = '0';
-        setTimeout(() => {
-            section.style.display = 'none';
-        }, 1000); 
+// Function to hide all sections
+const hideAllSections = () => {
+    document.querySelectorAll('.content-section').forEach(section => {
+        section.classList.add('hidden');
     });
-}
+};
 
-// Fonction pour afficher la section sélectionnée
-function showSection(sectionId) {
-    hideAllSections(); 
+// Function to show the selected section
+const showSection = (sectionId) => {
+    hideAllSections();
 
     const selectedSection = document.getElementById(sectionId);
     if (selectedSection) {
-        setTimeout(() => {
-            selectedSection.style.display = 'block'; 
-            setTimeout(() => {
-                selectedSection.style.opacity = '1'; 
-            }, 50); 
-        }, 1000); 
-
+        selectedSection.classList.remove('hidden');
         window.scrollTo({
             top: selectedSection.offsetTop - 50,
             behavior: 'smooth'
         });
     }
-}
+};
 
-// Fonction pour le bouton Retour en Haut
-function scrollToTop() {
+// Function to add event listeners to navigation buttons
+const addNavigationEventListeners = () => {
+    document.querySelectorAll('.nav-button').forEach(button => {
+        button.addEventListener('click', (event) => {
+            const sectionId = event.currentTarget.dataset.section;
+            showSection(sectionId);
+        });
+    });
+};
+
+// Function for the Back to Top button
+const scrollToTop = () => {
     window.scrollTo({
         top: 0,
         behavior: 'smooth'
     });
-}
+};
 
-// Afficher le bouton Retour en Haut lors du défilement
-window.addEventListener('scroll', function() {
+// Handle scroll event
+const handleScroll = () => {
     const backToTopButton = document.getElementById('back-to-top');
-    if (window.scrollY > 300) {
-        backToTopButton.style.display = 'block';
-    } else {
-        backToTopButton.style.display = 'none';
+    if (backToTopButton) {
+        backToTopButton.style.display = window.scrollY > 300 ? 'block' : 'none';
     }
-});
+};
+
+// Debounce function to limit the rate at which a function can fire
+const debounce = (func, wait) => {
+    let timeout;
+    return (...args) => {
+        clearTimeout(timeout);
+        timeout = setTimeout(() => func.apply(this, args), wait);
+    };
+};

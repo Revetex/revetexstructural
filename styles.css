@@ -1,36 +1,36 @@
-/* Styles généraux */
+/* Base Styles */
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    color: #333333; /* Gris foncé pour le texte */
-    background-color: #000000; /* Fond noir pour correspondre au logo */
+    color: #333;
+    background-color: #000;
 }
 
-/* Sélecteur de langue */
+/* Language Switcher */
 .language-switcher {
     display: flex;
     justify-content: flex-end;
     padding: 10px;
-    background-color: #000000; /* Noir pour correspondre au logo */
+    background-color: #000;
 }
 
 .language-switcher button {
     margin-left: 10px;
     padding: 5px 10px;
-    background-color: #ffffff; /* Blanc */
-    border: 1px solid #cccccc; /* Gris clair */
+    background-color: #fff;
+    border: 1px solid #ccc;
     cursor: pointer;
-    color: #333333; /* Gris foncé */
+    color: #333;
 }
 
 .language-switcher button:hover {
-    background-color: #e0e0e0; /* Gris légèrement plus foncé */
+    background-color: #e0e0e0;
 }
 
-/* En-tête */
+/* Header */
 .header {
-    background-color: #000000; /* Noir pour correspondre au logo */
-    color: #ffffff; /* Blanc */
+    background-color: #000;
+    color: #fff;
     text-align: center;
     padding: 0;
     display: flex;
@@ -38,22 +38,21 @@ body {
     align-items: center;
 }
 
-/* Logo */
 .logo-container {
     width: 100%;
-    background-color: #000000; /* Fond noir derrière le logo */
-    padding: 20px 0; /* Ajoute un peu d'espace autour du logo */
+    background-color: #000;
+    padding: 20px 0;
 }
 
 .logo {
-    width: 250px; /* Taille ajustée du logo */
+    width: 250px;
     height: auto;
 }
 
 /* Navigation */
 .navbar {
     width: 100%;
-    background-color: #000000; /* Fond noir pour la navigation */
+    background-color: #000;
 }
 
 .nav-links {
@@ -68,14 +67,17 @@ body {
     margin: 0 15px;
 }
 
-.nav-links a {
-    text-decoration: none;
-    color: #ffffff; /* Texte en blanc pour être visible sur fond noir */
+.nav-links button {
+    background: none;
+    border: none;
+    color: #fff;
     font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
 }
 
-.nav-links a:hover {
-    color: #cccccc; /* Gris clair au survol */
+.nav-links button:hover {
+    color: #ccc;
 }
 
 .burger-menu {
@@ -84,13 +86,13 @@ body {
     background: none;
     border: none;
     cursor: pointer;
-    color: #ffffff; /* Icône du menu burger en blanc */
+    color: #fff;
     position: absolute;
     top: 15px;
     right: 20px;
 }
 
-/* Contenu de l'en-tête */
+/* Header Content */
 .header-content {
     max-width: 800px;
     margin: 0 auto;
@@ -100,18 +102,18 @@ body {
 .header-content h1 {
     font-size: 48px;
     margin-bottom: 20px;
-    color: #ffffff; /* Blanc */
+    color: #fff;
 }
 
 .header-content p {
     font-size: 24px;
     margin-bottom: 40px;
-    color: #cccccc; /* Gris clair */
+    color: #ccc;
 }
 
 .cta-button {
-    background-color: #ffffff; /* Blanc */
-    color: #000000; /* Noir */
+    background-color: #fff;
+    color: #000;
     padding: 15px 30px;
     text-decoration: none;
     font-size: 18px;
@@ -120,14 +122,14 @@ body {
 }
 
 .cta-button:hover {
-    background-color: #cccccc; /* Gris clair */
+    background-color: #ccc;
 }
 
 /* Sections */
 section {
     padding: 60px 20px;
-    background-color: #000000; /* Fond noir pour correspondre au logo */
-    color: #ffffff; /* Texte en blanc pour être lisible */
+    background-color: #000;
+    color: #fff;
 }
 
 .container {
@@ -139,10 +141,10 @@ h2 {
     font-size: 36px;
     margin-bottom: 40px;
     text-align: center;
-    color: #ffffff; /* Blanc */
+    color: #fff;
 }
 
-/* Listes */
+/* Lists */
 .service-list,
 .value-list {
     list-style: none;
@@ -153,14 +155,14 @@ h2 {
 .value-list li {
     margin-bottom: 20px;
     font-size: 18px;
-    color: #ffffff; /* Blanc */
+    color: #fff;
 }
 
 .service-list li ul,
 .value-list li ul {
     list-style: disc;
     margin-left: 20px;
-    color: #cccccc; /* Gris clair */
+    color: #ccc;
 }
 
 .service-list li ul li,
@@ -168,80 +170,13 @@ h2 {
     margin-bottom: 5px;
 }
 
-/* Galerie de projets */
-.project-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.project-item {
-    width: 48%;
-    margin-bottom: 20px;
-    background-color: #ffffff; /* Blanc */
-    padding: 10px;
-    border: 1px solid #cccccc; /* Gris clair */
-    border-radius: 5px;
-}
-
-.project-item img {
-    width: 100%;
-    border-radius: 5px;
-}
-
-.project-item h3 {
-    margin-top: 10px;
-    font-size: 24px;
-    color: #000000; /* Noir */
-}
-
-.project-item p {
-    font-size: 16px;
-    color: #333333; /* Gris foncé */
-}
-
-/* Témoignages */
-.testimonials {
-    background-color: #000000; /* Noir */
-    color: #ffffff; /* Blanc */
-}
-
-.testimonial-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.testimonial-item {
-    max-width: 800px;
-    margin-bottom: 40px;
-    text-align: center;
-    background-color: #ffffff; /* Blanc */
-    padding: 20px;
-    border: 1px solid #cccccc; /* Gris clair */
-    border-radius: 5px;
-}
-
-.testimonial-item p {
-    font-size: 18px;
-    line-height: 1.5;
-    color: #333333; /* Gris foncé */
-}
-
-.testimonial-item strong {
-    display: block;
-    margin-top: 10px;
-    font-size: 16px;
-    color: #666666; /* Gris moyen */
-}
-
-/* Formulaire de contact */
+/* Contact Form */
 .contact form {
     max-width: 600px;
     margin: 0 auto 40px;
-    background-color: #ffffff; /* Blanc */
+    background-color: #fff;
     padding: 20px;
-    border: 1px solid #cccccc; /* Gris clair */
+    border: 1px solid #ccc;
     border-radius: 5px;
 }
 
@@ -252,7 +187,7 @@ h2 {
 .form-group label {
     display: block;
     margin-bottom: 5px;
-    color: #ffffff; /* Blanc */
+    color: #333;
 }
 
 .form-group input,
@@ -260,13 +195,13 @@ h2 {
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
-    border: 1px solid #cccccc; /* Gris clair */
+    border: 1px solid #ccc;
     border-radius: 3px;
 }
 
 #submit-button {
-    background-color: #ffffff; /* Blanc */
-    color: #000000; /* Noir */
+    background-color: #000;
+    color: #fff;
     padding: 15px 30px;
     border: none;
     font-size: 18px;
@@ -275,12 +210,12 @@ h2 {
 }
 
 #submit-button:hover {
-    background-color: #cccccc; /* Gris clair */
+    background-color: #333;
 }
 
 .contact-info {
     text-align: center;
-    color: #ffffff; /* Blanc */
+    color: #fff;
 }
 
 .contact-info p {
@@ -288,7 +223,7 @@ h2 {
 }
 
 .contact-info a {
-    color: #ffffff; /* Blanc */
+    color: #fff;
     text-decoration: none;
 }
 
@@ -296,21 +231,21 @@ h2 {
     text-decoration: underline;
 }
 
-/* Carte */
+/* Map */
 #contact-map {
     margin-top: 40px;
 }
 
-/* Pied de page */
+/* Footer */
 .footer {
-    background-color: #000000; /* Noir */
-    color: #ffffff; /* Blanc */
+    background-color: #000;
+    color: #fff;
     text-align: center;
     padding: 20px;
 }
 
 .footer a {
-    color: #ffffff; /* Blanc */
+    color: #fff;
     text-decoration: none;
 }
 
@@ -318,13 +253,13 @@ h2 {
     text-decoration: underline;
 }
 
-/* Bouton Retour en Haut */
+/* Back to Top Button */
 #back-to-top {
     position: fixed;
     bottom: 30px;
     right: 30px;
-    background-color: #ffffff; /* Blanc */
-    color: #000000; /* Noir */
+    background-color: #fff;
+    color: #000;
     border: none;
     padding: 15px;
     font-size: 18px;
@@ -334,10 +269,15 @@ h2 {
 }
 
 #back-to-top:hover {
-    background-color: #cccccc; /* Gris clair */
+    background-color: #ccc;
 }
 
-/* Responsivité */
+/* Hidden Sections */
+.hidden {
+    display: none;
+}
+
+/* Responsiveness */
 @media (max-width: 768px) {
     .nav-links {
         flex-direction: column;
